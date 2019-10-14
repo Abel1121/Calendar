@@ -1,0 +1,63 @@
+:root {
+  --light-gray: #DADCE0;
+  --light-blue: #1B9CE2;
+  --dark: #222; }
+
+body {
+  margin: 0; }
+
+#app {
+  background-color: white;
+  color: var(--dark);
+  -webkit-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  transition: background-color 200ms, color 200ms; }
+
+#app.dark {
+  background-color: var(--dark);
+  color: white;
+  -webkit-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  transition: background-color 200ms, color 200ms; }
+
+#app-calendar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[5];
+  grid-template-rows: repeat(5, 1fr);
+  height: 100%; }
+
+#theme-switch {
+  fill: var(--dark);
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer; }
+
+#app.dark #theme-switch {
+  fill: white; }
+
+.day {
+  border-bottom: 1px solid var(--light-gray);
+  border-right: 1px solid var(--light-gray);
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  transition: background-color 200ms, color 200ms; }
+
+.name {
+  padding-bottom: 5px; }
+
+.weekend {
+  color: var(--light-blue); }
+
+.selected {
+  background-color: var(--light-blue);
+  color: white; }
+
+/*# sourceMappingURL=main.css.map */
