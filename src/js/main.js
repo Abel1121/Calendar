@@ -1,6 +1,6 @@
 import "./calendar.js";
-import dataStorage from "./data-storage.js"
-
+import DataStorage from "./data-storage.js"
+const dataStorage = new DataStorage;
 const app = document.querySelector("#app");
 
 document.querySelectorAll(".day").forEach(day => {

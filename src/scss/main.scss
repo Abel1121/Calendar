@@ -11,6 +11,7 @@ body {
   background-color: white;
   color: var(--dark);
   transition: background-color 200ms, color 200ms;
+  height: 100vh;
 }
 #app.dark{
   background-color: var(--dark);
