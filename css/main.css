@@ -11,7 +11,8 @@ body {
   color: var(--dark);
   -webkit-transition: background-color 200ms, color 200ms;
   -o-transition: background-color 200ms, color 200ms;
-  transition: background-color 200ms, color 200ms; }
+  transition: background-color 200ms, color 200ms;
+  height: 100vh; }
 
 #app.dark {
   background-color: var(--dark);
