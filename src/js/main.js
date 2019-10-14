@@ -1,5 +1,5 @@
-import "./calendar.js.js";
-import dataStorage from "./data-storage.js.js"
+import "./calendar.js";
+import dataStorage from "./data-storage.js"
 
 const app = document.querySelector("#app");
 
